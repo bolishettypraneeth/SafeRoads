@@ -1,0 +1,147 @@
+
+.live-map-page {
+  padding: 24px;
+  background: #f4f7fb;
+  min-height: 100vh;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.live-map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.live-map-eyebrow {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #087f8c;
+}
+
+.live-map-header h1 {
+  margin: 8px 0;
+  font-size: 30px;
+}
+
+.live-map-header p {
+  color: #64748b;
+  margin: 0;
+}
+
+.live-map-refresh {
+  border: none;
+  background: #087f8c;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+
+.live-map-refresh:hover {
+  background: #066773;
+}
+
+.live-map-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.live-map-stat {
+  background: white;
+  padding: 18px;
+  border: 1px solid #e5eaf1;
+  border-radius: 12px;
+}
+
+.live-map-stat span {
+  display: block;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.live-map-stat strong {
+  font-size: 23px;
+}
+
+.live-map-container {
+  height: 500px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #dce3eb;
+  background: #e2e8f0;
+}
+
+.live-map {
+  height: 100%;
+  width: 100%;
+}
+
+.incident-map-marker {
+  background: transparent;
+  border: none;
+}
+
+.incident-marker-dot {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #dc2626;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px #0003;
+  font-weight: bold;
+}
+
+.live-map-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.live-map-note {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.live-map-error {
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .live-map-page {
+    padding: 14px;
+  }
+
+  .live-map-header h1 {
+    font-size: 24px;
+  }
+
+  .live-map-summary {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .live-map-container {
+    height: 400px;
+  }
+}

@@ -1,0 +1,260 @@
+
+.emergency-page {
+  width: 100%;
+  color: #0f172a;
+}
+
+.emergency-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.emergency-eyebrow {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.emergency-header h2 {
+  margin: 8px 0;
+  font-size: 27px;
+}
+
+.emergency-header p {
+  margin: 0;
+  max-width: 650px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.emergency-refresh {
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 8px;
+  background: #0f766e;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.emergency-refresh:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.emergency-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.emergency-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.emergency-summary-card > span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f1f5f9;
+  font-size: 22px;
+}
+
+.emergency-summary-card strong {
+  font-size: 24px;
+}
+
+.emergency-summary-card p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.emergency-list {
+  display: grid;
+  gap: 14px;
+}
+
+.emergency-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #dc2626;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgb(15 23 42 / 4%);
+}
+
+.emergency-card.high {
+  border-left-color: #d97706;
+}
+
+.emergency-card-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #fee2e2;
+  font-size: 24px;
+}
+
+.emergency-card.high .emergency-card-icon {
+  background: #fef3c7;
+}
+
+.emergency-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.emergency-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.emergency-severity {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.emergency-severity.high {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.emergency-category {
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.emergency-card-content h3 {
+  margin: 11px 0 6px;
+  font-size: 17px;
+}
+
+.emergency-description {
+  margin: 0 0 13px;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.emergency-information {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.emergency-empty {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+}
+
+.emergency-empty > span {
+  font-size: 34px;
+}
+
+.emergency-empty h3 {
+  margin: 12px 0 8px;
+  color: #166534;
+}
+
+.emergency-empty p {
+  max-width: 540px;
+  margin: 0 auto;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.emergency-notice {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.emergency-notice strong {
+  color: #334155;
+}
+
+@media (max-width: 950px) {
+  .emergency-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .emergency-header h2 {
+    font-size: 22px;
+  }
+
+  .emergency-summary {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+
+  .emergency-summary-card {
+    gap: 9px;
+    padding: 12px;
+  }
+
+  .emergency-summary-card > span {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+
+  .emergency-summary-card strong {
+    font-size: 20px;
+  }
+
+  .emergency-card {
+    gap: 11px;
+    padding: 13px;
+  }
+
+  .emergency-card-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,242 @@
+
+.road-conditions {
+  width: 100%;
+  color: #172033;
+}
+
+.road-conditions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.road-conditions-header h2 {
+  margin: 0 0 8px;
+  font-size: 25px;
+  font-weight: 750;
+}
+
+.road-conditions-header p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.road-refresh-button {
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 16px;
+  background: #0f766e;
+  color: white;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.road-refresh-button:hover {
+  background: #115e59;
+}
+
+.road-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.road-stat-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 13px;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+}
+
+.road-stat-card span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.road-stat-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 29px;
+  color: #0f172a;
+}
+
+.road-filter-panel {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.road-filter-panel input,
+.road-filter-panel select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: white;
+  color: #172033;
+  font-size: 14px;
+}
+
+.road-filter-panel input:focus,
+.road-filter-panel select:focus {
+  outline: 2px solid #99f6e4;
+  border-color: #0f766e;
+}
+
+.road-report-list {
+  display: grid;
+  gap: 15px;
+}
+
+.road-report-card {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 13px;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+}
+
+.road-report-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.road-report-top h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.road-report-id {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.road-report-description {
+  margin: 16px 0;
+  color: #475569;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.road-report-details {
+  display: grid;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.road-priority,
+.road-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.road-priority.low {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.road-priority.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.road-priority.high {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.road-priority.critical {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.road-status.reported {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.road-status.in-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.road-status.resolved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.road-empty-state {
+  padding: 45px 20px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 13px;
+}
+
+.road-empty-icon {
+  font-size: 40px;
+}
+
+.road-empty-state h3 {
+  margin: 12px 0 8px;
+}
+
+.road-empty-state p {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.road-data-note {
+  margin-top: 22px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .road-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .road-filter-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .road-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .road-report-card {
+    padding: 15px;
+  }
+
+  .road-report-top {
+    flex-direction: column;
+  }
+}
